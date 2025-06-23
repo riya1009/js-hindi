@@ -126,3 +126,32 @@ console.log("1"+ 1); // "11" (string concatenation, 1 is converted to string)
 console.log("1"+2+2); // "122" (string concatenation, 1 is converted to string, then 2 is converted to string)
 console.log(1+2+"2"); // "32" (1 and 2 are added first, then 2 is converted to string)
 console.log(1+2+2); // 5 (1 and 2 are added)
+console.log(1+2+"2" - 1); // 31 (1 and 2 are added first, then "2" is converted to number, then 1 is subtracted)
+console.log("1" + 2 - 1); // 1 (1 is converted to string, then 2 is added, then 1 is subtracted)
+console.log("1" - 1); // 0 (1 is converted to number, then 1 is subtracted) 
+console.log("1" * 2); // 2 (1 is converted to number, then multiplied by 2)
+console.log("1" / 2); // 0.5 (1 is converted to number, then divided by 2)
+console.log("1" % 2); // 1 (1 is converted to number, then modulus is calculated with 2)
+console.log("1" ** 2); // 1 (1 is converted to number, then exponentiation is calculated with 2)
+console.log("1" + "2"); // "12" (string concatenation, both are converted to string)
+console.log("1" - "2"); // -1 (both are converted to number, then subtracted)
+
+console.log(+true); // 1 (true is converted to number)
+console.log(+false); // 0 (false is converted to number)
+console.log(-true); // -1 (true is converted to number, then negated)
+console.log(-false); // 0 (false is converted to number, then negated)  
+console.log(+""); // 0 (empty string is converted to number)
+console.log(+"Hello"); // NaN (not a number, string cannot be converted to number)
+console.log(+"123"); // 123 (string is converted to number)
+
+// prefix and postfix increment and decrement operators
+let a = 5;      
+console.log(++a); // 6 (prefix increment, a is incremented before being used)
+console.log(a++); // 6 (postfix increment, a is incremented after being used)
+console.log(a); // 7 (a is now 7 after the postfix increment)       
+console.log(--a); // 6 (prefix decrement, a is decremented before being used)
+console.log(a--); // 6 (postfix decrement, a is decremented after being used)
+console.log(a); // 5 (a is now 5 after the postfix decrement)
+
+// study conversions and operations and prefix and postfix increment and decrement operators
+// and how they work with different data types from mdn web docs
