@@ -97,3 +97,32 @@ let stringObject = String(objectValue); // convert object to string
 console.log(stringObject); // "[object Object]"
 console.log(typeof stringObject); // string
 
+// ****************OPERATIONS******************
+
+let value = 3;
+let negvalue = -value; // negation
+console.log(negvalue); // -3
+
+// console.log(2+2); // addition
+// console.log(2-2); // subtraction        
+// console.log(2*2); // multiplication
+// console.log(2/2); // division
+// console.log(2%2); // modulus (remainder)
+// console.log(2**2); // exponentiation (2 raised to the power of 2)
+// console.log(2++); // increment (not recommended, use value++)   
+
+
+let str1 = "Hello";
+let str2 = "World";
+let concatenatedString = str1 + " " + str2; // string concatenation
+console.log(concatenatedString); // "Hello World"   
+// console.log("Hello" + " " + "World"); // string concatenation
+// console.log("Hello" - "World"); // NaN (Not a Number, subtraction is not allowed on strings)
+// console.log("Hello" * "World"); // NaN (Not a Number, multiplication is not allowed on strings)
+// console.log("Hello" / "World"); // NaN (Not a Number, division is not allowed on strings)
+// console.log("Hello" % "World"); // NaN (Not a Number, modulus is not allowed on strings)
+// console.log("Hello" ** "World"); // NaN (Not a Number, exponent  iation is not allowed on strings)       
+console.log("1"+ 1); // "11" (string concatenation, 1 is converted to string)
+console.log("1"+2+2); // "122" (string concatenation, 1 is converted to string, then 2 is converted to string)
+console.log(1+2+"2"); // "32" (1 and 2 are added first, then 2 is converted to string)
+console.log(1+2+2); // 5 (1 and 2 are added)
